@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./SHOPS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <nav class="container">
+        <div class="cont-1">
+            <h1>FASHION</h1>
+        </div>
+        <div class="cont-2">
+            <ul class="links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="BRANDING.html">BRANDING</a></li>
+                <li><a href="SHOPS.html">SHOPS</a></li>
+                <li><a href="CONTACT.html">CONTACT</a></li>
+                <li><a href="index.html#boy" class="action_btn">started</a></li>
+            </ul>
+        </div>
+          <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        <div class="dropdown">
+            <div onclick="hideSidebar()" class="sidebar">
+                <i class="fa-solid fa-x"></i>
+            </div>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="BRANDING.html">BRANDING</a></li>
+                <li><a href="SHOPS.html">SHOPS</a></li>
+                <li><a href="CONTACT.html">CONTACT</a></li>
+                <li><a href="index.html#boy" class="action_btn">started</a></li>
+        </div>
+        <div class="cont-3">
+            <div class="solid">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+            <button>Buy Now</button>
+        </div>
+    </nav>
+
+    <div class="him" style="background-image: url(./img/37edd82ef385e0e33bcddbdd885152be.jpg); height: 90vh; background-repeat: no-repeat; background-size: cover; width: 100%;">
+    </div>
+
+    <div class="bean">
+    <div class="bnn">
+       <div class="nck">
+        <h2>GIVE All YOU NEED</h2>
+       </div>
+       <div class="bad">
+       <div class="nvk">
+        <input type="text" placeholder="Search">
+       </div>
+       <div class="arc">
+        <button>Search</button>
+       </div>
+       </div>
+    </div>
+    </div>
+
+    <!-- STATS PANEL -->
+    <div class="stats-panel" id="statsPanel">
+      <div class="stat-item">
+        <div class="stat-value" id="productCount">0</div>
+        <div class="stat-label">Products</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="serviceCount">0</div>
+        <div class="stat-label">Services</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="totalClicks">0</div>
+        <div class="stat-label">Total Clicks</div>
+      </div>
+    </div>
+
+<div class="kill">
+    <div class="card"  onclick="selectCard(this)">
+       <div class="sung">
+        <img src="./img/44dd5ceba2d3418f017c3c59ee46494f.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$49.99</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/2a397f4d41c44eb39770dd8b4bdf9f96.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/d72183a2974034af4ec72b7410a351d3.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+       
+    <div>
+       <div class="sung">
+        <img src="./img/d6cf4310281e8db384c3f4f694633003.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/69d33b82b0ec0b0f7fee15010417e870.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/21762d7be7b9dcd29e5e1d5798d7af6e.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/3301685e6d111561e212bf9db0f34402.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/46720bb85fafd83869e755893b6e778b.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/0fe5c5fc371538a33942ab3395264a2d.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/b27e6cbd9e3e70ae7aa10c1c642a08da.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/f8b892e39f0fe29e98fa135156e7f539.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/f685708886beecfd43554148e122f8a0.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/fd660001e4254783ceb941428c74820b.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/3720002dd35691e33856d6448b60e695.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/8f9b0b65b1a0c7109b8b4223891b6146.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/8bb07fcb08541a8812a39c6a58d29bb9.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/963c8820ac32f0ed7155020a511710a7.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/b8505c7d98b54d610d9484a5b08631a8.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/2dc123164cf7fe61eaf1af82b5dbf5c3.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/ab301c0f82726b685a2e17fbe4bd8a48.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+</div>     
+
+<div class="kill">
+    <div>
+       <div class="sung">
+        <img src="./img/98a75724ff8204ed34629056cc4eedb6.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/27308bc0b78605dbd911eec5afc9eaaa.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/77538fb5d9f3a12e11a683b54c45f104.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+       
+    <div>
+       <div class="sung">
+        <img src="./img/85461970ff496880bf83b7af4d61f659.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/d1ac437a408be43fc267378b20448e57.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/79b75689c8417c71345cda0ba147af17.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/7dca607ae75a4b7e9b40851a2875e76f.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/7a7f7acc327bfabae24722c972a55c53.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/9b209eb88b6009ac1ddc431f4ecafa43.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/b7ab701f09303a80de5ed38d5de7a823.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/e7c21ccbb0ce0ec41ae5193fa308fa19.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/31f7c55b77df04a51b36a15aec7ad2f3.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/8f6f9b13c26927e06c0883e9adc3698c.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/b86b0e5732a16eeea8ec5c2be7984817.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/2d5393c70eb87af701281f691c2b0029.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/9af2e6ff4b416624029f36f2776b77fc.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/07b9514a6d0f3fb4aa99534ccb837bed.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/e7377f58902423240b3e4e0efcf83d27.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/1356264a5a8a6ab3e064d8c0436e8871.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+
+    <div>
+       <div class="sung">
+        <img src="./img/9a57bb4c3055a8ccce1f408fb8ee8bef.jpg" alt="" width="200" height="200">
+       </div>
+       <div class="fan"><h2>Casual Shirt</h2></div>
+       <div class="hirt">
+       <div>
+        <img src="./img/5bd7c1c219fe6a8bb4063ca594d8611c-removebg-preview.png" alt="" width="100">
+       </div>
+       <div>
+        <h2 class="pan">$29.90</h2>
+       </div>
+       </div>
+       <div class="nou">
+           <div class="chart">
+            <button onclick="buyProduct(this, 'Basic Product', 49.99); event.stopPropagation();">Add to Chart</button>
+           </div>
+           <div class="buy">
+            <button onclick="bookService(this, 'Training'); event.stopPropagation();">Buy Now</button>
+           </div>
+       </div>
+       </div>
+</div>  
+
+    <div class="tuff">
+        <div class="wen">
+           <h2>Ready to Get</h2> 
+           <h2>Our New Stuff?</h2> 
+           <input type="text" placeholder="Your Email">
+           <button>Send</button>
+        </div>
+        <div class="rem">
+            Lorem ipsum dolor sit, amet consectetur 
+            adipisicing elit. Dolore aspernatur aperiam
+             corporis vel quis placeat ex in vero quidem
+              porro fugiat dicta nam alias exercitationem
+               nesciunt, voluptatem veniam sit deserunt?
+        </div>
+    </div>
+    <div class="hold">
+    <div class="riri">
+        <div class="lory">
+            <h3>About</h3>
+            <h4>Blog</h4>
+            <h4>Meet The Team</h4>
+            <h4>Contact Us</h4>
+        </div>
+        <div class="pany">
+            <h3>Support</h3>
+            <h4>Contact Us</h4>
+            <h4>Shipping</h4>
+            <h4>Return</h4>
+            <h4>FAQ</h4>
+        </div>
+    </div>
+
+    <div class="con">
+        <a href="https://twitter.com/Tenzyco"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/Tenzyco"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/fadahunsiisaac"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/Tenzyco"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    </div>
+
+   <script src="./SHOPS.js"></script>
+</body>
+</html>

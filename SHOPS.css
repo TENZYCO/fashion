@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+  }
+.container{
+    display: flex;
+    margin: 1.5em;
+    justify-content: space-between;
+}
+.cont-1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.cont-2 ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 25px;
+    margin-top: 0.6em;
+}
+.cont-2 li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.solid{
+    margin: 10px;
+    justify-content: space-between;
+}
+.cont-3{
+    display: flex;
+    gap: 20px;
+}
+.cont-3 button{
+    height: 35px;
+    background: black;
+    border-radius: 05px;
+    color: white;
+    font-weight: bolder;
+    width: 110px;
+    transition: all ease-in-out 2s;
+}
+.cont-3 button:hover{
+    border-radius: 40px 5px 40px 5px;
+}
+.toggle_btn{
+    color: black;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    font-size: 1.5rem;
+}
+.action_btn{
+    background-color: orange;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: bolder;
+    color: antiquewhite;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+.action_btn:active{
+    scale: 0.95;
+}
+.action_btn:hover{
+    scale: 1.05;
+    color: aliceblue;
+}
+.dropdown li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.dropdown{
+    position: absolute;
+    display: none;
+    right: 2rem;
+    height: 0;
+    top: 70px;
+    width: 300px;
+    background: rgba(225, 225, 225, 0.993);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown.open{
+    height: 290px;
+}
+.dropdown li{
+    padding: 0.7rem;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.dropdown .action_btn{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+@media(max-width: 830px){
+    .cont-2{
+        display: none;
+    }
+    .toggle_btn{
+        display: flex;
+        font-size: 17px;
+        margin-top: 8px;
+        margin-left: 10px;
+        position: relative;
+    }
+    .dropdown{
+        display: block;
+    }
+    .sidebar{
+        margin: 10px;
+    }
+    .solid{
+        display: flex;
+        gap: 3px;
+    }
+    .cont-1{
+        font-size: 12px;
+        margin-top: 0em;
+    }
+    .cont-3 button{
+        /* margin-right: 1em; */
+        width: 100px;
+    }
+}
+.bean{
+    background: linear-gradient(transparent, transparent 0%, transparent 100%);
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      bottom: 80px;
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-around;
+}
+.bnn{
+    border: 1px solid black;
+    height: 70px;
+    width: 70%;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.bad{
+    display: flex;
+    gap: 50px;
+}
+.nck{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nvk input{
+    height: 35px;
+    width: 120%;
+    padding: 10px;
+    outline: none;
+    border: 0.5px solid;
+    border-radius: 20px;
+}
+.arc{
+    margin-right: 25px;
+}
+.arc button{
+    height: 35px;
+    border: 0.5px solid;
+    background-color: black;
+    color: #fff;
+    width: 150%;
+    border-radius: 20px;
+}
+.arc button:hover{
+    background: linear-gradient(gray, black);
+}
+@media(max-width: 830px){
+    .nck h2{
+        font-size: none;
+        display: none;
+    }
+    .nvk input{
+    height: 35px;
+    width: 130%;
+    right: 100px;
+    padding: 10px;
+    outline: none;
+    border: 0.5px solid;
+    border-radius: 20px;
+}
+}
+
+.stats-panel {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      border-radius: 50px;
+      margin: 20px 0;
+      position: relative;
+      bottom: 70px;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .stat-item {
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    
+    .stat-label {
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
+
+.sung img{
+    border-radius: 15px;
+    width: 35vh;
+}
+.sake h2{
+    margin-top: 8.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hirt{
+    display: flex;
+    gap: 25px;
+}
+.nou{
+    display: flex;
+    gap: 20px;
+}
+.chart button{
+    padding: 8px;
+    border-radius: 20px;
+    width: 100px;
+    border: 0px solid;
+}
+.chart button:hover{
+    background: linear-gradient(gray, aliceblue);
+}
+.buy button{
+    padding: 8px;
+    border-radius: 20px;
+    color: #fff;
+    background: black;
+    width: 100px;
+    border: 0.5px solid;
+}
+.buy button:hover{
+    background: linear-gradient(gray, black);
+}
+.fan{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pan{
+    position: relative;
+    top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.kill{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 51.5px;
+    margin: 1em;
+}
+@media(max-width: 830px){
+    .kill{
+        justify-content: center;
+        align-items: center;
+    }
+}
+.tuff{
+    border: 1px solid;
+    margin: 15px;
+    margin-top: 2em;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    color: #fff;
+    background: gray;
+    justify-content: space-between;
+}
+.wen input{
+    height: 30px;
+    width: 200px;
+    border: 0px solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+.wen button{
+    padding: 10px;
+    border-radius: 20px;
+    width: 70px;
+    text-align: center;
+    border: 0px solid;
+    background-color: black;
+    color: #fff;
+    height: 35px;
+}
+.rem{
+    width: 400px;
+}
+@media(max-width: 830px){
+    .rem{
+        width: 325px;
+        margin-top: 5px;
+    }
+    .wen input{
+        margin-top: 9px;
+    }
+    .wen button{
+        margin-top: 6px;
+    }
+    .tuff{
+        flex-direction: column;
+    }
+}
+.riri{
+    display: flex;
+    gap: 30px;
+}
+.lory h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.lory h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.lory {
+    line-height: 25px;
+}
+.pany {
+    line-height: 25px;
+}
+.pany h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pany h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hold{
+    margin: 15px;
+    display: flex ;
+    justify-content: space-between;
+}
+.con{
+    font-size: 35px;
+}
